@@ -1,0 +1,73 @@
+/* 清除浮动 */
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0
+}
+
+.clearfix {
+  *zoom: 1;
+}
+.brd{
+  border-bottom: 1px solid #d7d7d7;
+}
+*{
+  box-sizing: border-box;
+}
+h1{
+  height: 80px;
+  line-height: 80px;
+  margin: 0;
+  padding-left: 30px;
+  color: #ffffff;
+  background-color: #858585;
+}
+
+ul,h4,h2,p{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  border-right: 1px solid #d7d7d7;
+}
+
+ul{
+  float: left;
+  list-style: none;
+  width: 90%;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.text{
+  float: left;
+  width: 90%;
+  height: 120px;
+  padding-top: 10px;
+  padding-left: 10px;
+
+}
+ul li{
+  float: left;
+  height: 109px;
+  margin-right: 50px;
+
+}
+h2{
+  float: left;
+  width: 10%;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  background-color:#d6d6d6;
+  color:#424144;
+}
+h4,p{
+  float: left;
+}
+
+
+
+
