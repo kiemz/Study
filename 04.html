@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if任务图</title>
+  <style>
+    *{
+      margin: 0 auto;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      padding: 10px;
+    }
+    /* 清除浮动 */
+    .clearfix:after {
+      visibility: hidden;
+      clear: both;
+      display: block;
+      content: ".";
+      height: 0
+    }
+
+    .clearfix {
+      *zoom: 1
+    }
+    ul{
+      list-style: none;
+      
+    }
+    
+    header{
+      width: 100%;
+      height: 80px;
+      background-color: #333333;
+    }
+    .box{
+      position: relative;
+      width: 960px;
+      height: 100%;
+    }
+    .logo{
+      position: absolute;
+      color: #fff;
+      font-size: 24px;
+      line-height: 80px;
+    }
+    .navl{
+      position: absolute;
+      right: 0;
+    }
+    .navl ul li{
+      float: left;
+      margin-right: 20px;
+    }
+    .navl ul li a{
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .banner{
+      width: 100%;
+      height: 300px;
+      background-color: #66bb33;
+    }
+    .rb{
+      position: relative;
+      width: 960px;
+      height: 100%;
+    }
+    .rb ul{
+      position: absolute;
+      right: 0;
+      bottom: 5px;
+    }
+    .rb ul li{
+      display: inline-block;
+      width: 30px;
+      height: 50px;
+      border: 1px solid black;
+      margin-left: 10px;
+      vertical-align: bottom;
+      line-height: 50px;
+      text-align: center;
+      background-color: #b2dd99;
+    }
+    .rb ul li:nth-child(2){
+      height: 65px;
+      line-height: 80px;
+      background-color: #e0f1d6;
+    }
+    nav{
+      height: 80px;
+      border-bottom: 1px solid #ebebeb;
+    }
+    .nav1{
+      position: relative;
+      width: 960px;
+      height: 100%;
+    }
+    .nav1 ul{
+      position: absolute;
+      bottom: 0;
+    }
+    .nav1  ul li{
+      float: left;
+      width: 100px;
+      height: 50px;
+      border: 1px solid #e4e4e4;
+      border-bottom: 0;
+      line-height: 50px;
+      text-align: center;
+      background-color: #eeeeee;
+      border-radius: 20px 20px 0 0;
+    }
+    .nav1  ul li:nth-child(1){
+      background-color: #fff;
+    }
+    .nav1  ul li a{
+      display: block;
+      text-decoration: none;
+      color: black;
+      
+    }
+    .main{
+      width: 960px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content:space-between
+    }
+    .main div{
+      width: 32%;
+      height: 200px;
+      border: 1px solid #e4e4e4;;
+      margin-top: 10px;
+      text-align: center;
+      line-height: 40px;
+      padding: 80px;
+    }
+  
+    .main div:nth-child(-n+7):nth-child(n+4){
+      width: 23.5%;
+      height: 200px;
+      padding: 70px;
+      line-height: 60px;
+    }
+
+    footer{
+      height: 100px;
+      margin-top: 20px;
+      background-color: #666666;
+    }
+    footer div{
+      width: 960px;
+      text-align: center;
+      padding-top: 15px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <section class="box">
+    <div class="logo">Logo</div>
+    <div class="navl">
+      <ul class="clearfix">
+      <li><a href="#">Github</a></li>
+      <li><a href="#">Register</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </div>
+</section>
+  </header>
+
+  <section class="banner">
+    <div class="rb">
+      <ul class="clearfix">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </div>
+  </section>
+
+  <nav>
+    <section class="nav1">
+      <ul class="clearfix">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PROFILE</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </section>
+  </nav>
+  <section class="main">
+    <div>This is Content 1</div>
+    <div>MaybeContent 2</div>
+    <div>Content 3</div>
+    <div>Content 4</div>
+    <div>Content 5</div>
+    <div>Content 6</div>
+    <div>Content 7</div>
+    <div>Content 8</div>
+    <div>Content 9</div>
+    <div>Content 10</div>
+  </section>
+  <footer>
+    <div>&copy; 2018 ife.baidu.com</div>
+  </footer>
+
+
+
+</body>
+</html>
